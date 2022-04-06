@@ -1,7 +1,7 @@
 <h1 align="center"> SpigotServerJARDownloader </h1>
 <p align="center"> Download jar files without internet access! SpigotServerJarDownloader allows you to download spigot server versions directly without going to the site, SpigotServerJarDownloader, which is coded via python, allows you to download the version you want by writing it in an appropriate way.</p>
 
-The JAR file downloads to the folder where you ran the code
+<h5 align="center">The JAR file downloads to the folder where you ran the code</h5>
 
 <h3 align="center"> Here is some images about SpigotServerJARDownloader </h3>
 
