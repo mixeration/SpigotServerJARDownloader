@@ -22,10 +22,82 @@ def downloader():
     path = Path(path_to_file)
 
     if path.is_file():
-        messagebox.showinfo("Message", "You already downloaded " + path_to_file + " version...")
+        messagebox.showinfo("Warning", "You already downloaded " + path_to_file + " version...")
     else:
-        if type(result) == str:
-            messagebox.showinfo("Message", "The version " + result + " is downloading...")
+        if (result) == "1.8.8":
+            messagebox.showinfo("Succes !", "The version " + result + " is downloading...")
+            remote_url = 'https://cdn.getbukkit.org/spigot/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar'
+            randomValue = r.random()
+            randomValue = 'spigot_' + result + '.jar'
+            data = requests.get(remote_url)
+            with open(randomValue, 'wb') as file:
+                file.write(data.content)
+        elif (result) == "1.8.7":
+            messagebox.showinfo("Succes !", "The version " + result + " is downloading...")
+            remote_url = 'https://cdn.getbukkit.org/spigot/spigot-1.8.7-R0.1-SNAPSHOT-latest.jar'
+            randomValue = r.random()
+            randomValue = 'spigot_' + result + '.jar'
+            data = requests.get(remote_url)
+            with open(randomValue, 'wb') as file:
+                file.write(data.content)
+
+        elif (result) == "1.8.6":
+            messagebox.showinfo("Succes !", "The version " + result + " is downloading...")
+            remote_url = 'https://cdn.getbukkit.org/spigot/spigot-1.8.6-R0.1-SNAPSHOT-latest.jar'
+            randomValue = r.random()
+            randomValue = 'spigot_' + result + '.jar'
+            data = requests.get(remote_url)
+            with open(randomValue, 'wb') as file:
+                file.write(data.content)
+
+        elif (result) == "1.8.5":
+            messagebox.showinfo("Succes !", "The version " + result + " is downloading...")
+            remote_url = 'https://cdn.getbukkit.org/spigot/spigot-1.8.5-R0.1-SNAPSHOT-latest.jar'
+            randomValue = r.random()
+            randomValue = 'spigot_' + result + '.jar'
+            data = requests.get(remote_url)
+            with open(randomValue, 'wb') as file:
+                file.write(data.content)
+
+        elif (result) == "1.8.4":
+            messagebox.showinfo("Succes !", "The version " + result + " is downloading...")
+            remote_url = 'https://cdn.getbukkit.org/spigot/spigot-1.8.4-R0.1-SNAPSHOT-latest.jar'
+            randomValue = r.random()
+            randomValue = 'spigot_' + result + '.jar'
+            data = requests.get(remote_url)
+            with open(randomValue, 'wb') as file:
+                file.write(data.content)
+
+        elif (result) == "1.8.3":
+            messagebox.showinfo("Succes !", "The version " + result + " is downloading...")
+            remote_url = 'https://cdn.getbukkit.org/spigot/spigot-1.8.3-R0.1-SNAPSHOT-latest.jar'
+            randomValue = r.random()
+            randomValue = 'spigot_' + result + '.jar'
+            data = requests.get(remote_url)
+            with open(randomValue, 'wb') as file:
+                file.write(data.content)
+
+        elif (result) == "1.8.2":
+            messagebox.showinfo("Succes !", "The version " + result + " is downloading...")
+            remote_url = 'https://cdn.getbukkit.org/spigot/spigot-1.8.2-R0.1-SNAPSHOT-latest.jar'
+            randomValue = r.random()
+            randomValue = 'spigot_' + result + '.jar'
+            data = requests.get(remote_url)
+            with open(randomValue, 'wb') as file:
+                file.write(data.content)
+
+        elif (result) == "1.8.1":
+            messagebox.showinfo("Succes !", "The version " + result + " is downloading...")
+            remote_url = 'https://cdn.getbukkit.org/spigot/spigot-1.8.1-R0.1-SNAPSHOT-latest.jar'
+            randomValue = r.random()
+            randomValue = 'spigot_' + result + '.jar'
+            data = requests.get(remote_url)
+            with open(randomValue, 'wb') as file:
+                file.write(data.content)
+
+
+        elif (result) == str:
+            messagebox.showinfo("Succes !", "The version " + result + " is downloading...")
             remote_url = 'https://cdn.getbukkit.org/spigot/spigot-' + result + '.jar'
             randomValue = r.random()
             randomValue = 'spigot_' + result + '.jar'
@@ -33,7 +105,7 @@ def downloader():
             with open(randomValue, 'wb') as file:
                 file.write(data.content)
         else:
-            messagebox.showinfo("Message", "Need to be a string")
+            messagebox.showinfo("Warning", "Need to be a string")
 
 ttk.Button(win, text="Click for download", command=downloader).pack(pady=5)
 
