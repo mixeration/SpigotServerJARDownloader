@@ -1,4 +1,5 @@
-<h1 align="center"> SpigotServerJARDownloader </h1>
+<p align="center"><img src="https://user-images.githubusercontent.com/64479768/162457732-deb39b7f-f375-4410-9def-b65933a19330.png"></p>
+
 <p align="center"> Download jar files without google or any browser! SpigotServerJarDownloader allows you to download spigot server versions directly without going to the site, SpigotServerJarDownloader, which is coded via python, allows you to download the version you want by writing it in an appropriate way.</p>
 
 <h4 align="center">The JAR file downloads to the folder where you ran the code. The program may stop working while the JAR file is downloading, please do not close it.</h4>
